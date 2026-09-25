@@ -1,2 +1,2 @@
-# finance-analytics-dbt
-Modélisation de données financières avec dbt
+ le but est de generer une base de données financieres volontairement sale pour s'entrainer au SQL.
+On utilisera python pour le faire
