@@ -8,4 +8,7 @@ with open("ma_compta_sales.csv","w", newline="",encoding="utf-8") as file:
                        612 :[ "voiture","camion", "photocopieur"],
                        218:[ "table de bureau", "ecran","armoire"]}
    for i in range(500):
-     writer.writerow(["01/01/2026", "610", "test", "Toulouse", "35", "40"])
+     compte=random.choice(list(compte_vs_article.keys ()))
+     libel=random.choice(compte_vs_article.get(compte))
+     writer.writerow(["01/01/2026", compte, libel, "Toulouse", "35", "40"])
+
