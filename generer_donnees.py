@@ -7,8 +7,10 @@ with open("ma_compta_sales.csv","w", newline="",encoding="utf-8") as file:
                        625:["hotel","restaurant","parking"],
                        612 :[ "voiture","camion", "photocopieur"],
                        218:[ "table de bureau", "ecran","armoire"]}
+   centrescout=["Centre A","Centre B","Centre C","Centre D","Centre E"]
    for i in range(500):
      compte=random.choice(list(compte_vs_article.keys ()))
      libel=random.choice(compte_vs_article.get(compte))
-     writer.writerow(["01/01/2026", compte, libel, "Toulouse", "35", "40"])
+     centre=random.choice(centrescout)
+     writer.writerow(["01/01/2026", compte, libel, centre, "35", "40"])
 
