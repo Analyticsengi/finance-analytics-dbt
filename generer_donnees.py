@@ -12,6 +12,7 @@ with open("ma_compta_sales.csv","w", newline="",encoding="utf-8") as file:
      compte=random.choice(list(compte_vs_article.keys ()))
      libel=random.choice(compte_vs_article.get(compte))
      centre=random.choice(centrescout)
-     deb=random.uniform(0,1001)
-     writer.writerow(["01/01/2026", compte, libel, centre, deb, "40"])
-print(deb)
+     deb=round(random.uniform(0,1001),2)
+     cred=round(random.uniform(0,1001),2)
+     writer.writerow(["01/01/2026", compte, libel, centre, deb, cred])
+
