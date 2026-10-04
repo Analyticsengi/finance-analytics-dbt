@@ -15,6 +15,8 @@ with open("ma_compta_sales.csv","w", newline="",encoding="utf-8") as file:
      mois=random.randint(1,12)
      centre=random.choice(centrescout)
      if mois>=7 and centre=="Centre B" : centre= ""
+     rand=random.randint(0,20)
+     if rand == 1 : libel="salaires"
      mouvement=random.choice(deb_cred)
      montant=round(random.uniform(0,1001),2)
      jour=random.randint(1,28)
