@@ -12,10 +12,10 @@ with open("ma_compta_sales.csv","w", newline="",encoding="utf-8") as file:
    for i in range(500):
      compte=random.choice(list(compte_vs_article.keys ()))
      libel=random.choice(compte_vs_article.get(compte))
+     mois=random.randint(1,12)
      centre=random.choice(centrescout)
      mouvement=random.choice(deb_cred)
      montant=round(random.uniform(0,1001),2)
-     mois=random.randint(1,12)
      jour=random.randint(1,28)
      writer.writerow([f"{jour}/{mois}/2026", compte, libel, centre,mouvement, montant])
 
