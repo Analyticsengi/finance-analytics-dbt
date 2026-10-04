@@ -17,8 +17,10 @@ with open("ma_compta_sales.csv","w", newline="",encoding="utf-8") as file:
      if mois>=7 and centre=="Centre B" : centre= ""
      rand=random.randint(0,20)
      if rand == 1 : libel="salaires"
+     if rand == 1 or rand==15 : annee=random.randint(2024,2026)
+     else: annee =2026
      mouvement=random.choice(deb_cred)
      montant=round(random.uniform(0,1001),2)
      jour=random.randint(1,28)
-     writer.writerow([f"{jour}/{mois}/2026", compte, libel, centre,mouvement, montant])
+     writer.writerow([f"{jour}/{mois}/{annee}", compte, libel, centre,mouvement, montant])
 
