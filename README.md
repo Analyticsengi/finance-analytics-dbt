@@ -4,31 +4,29 @@ Le but est de generer unn CSV financier volontairement sale pour s'entrainer au 
 On part de l'hypothèse que l'année par défault est 2026.
 J'y ajoute les défault volontaires : l'absence de centre de coûts, le libellé incohérent, les années hors exercies
 
-[2-3 phrases : ce que produit le script, pourquoi des données sales,
-à quoi elles serviront ensuite (SQL, puis dbt)]
-
-## Lancer le script
-
-[La commande exacte, et le fichier produit]
-
 ## Le fichier produit
 
-[Nombre de lignes, séparateur, puis les 6 colonnes :
-une ligne par colonne avec ce qu'elle contient]
+Produit 500 lignes(hors titre) CSV, avec séparateur via point-virgule.
+Cela génère 6 colonnes : Date;Numéro de compte;Libellé;Centre de coût;Mouvement;Montant
+
 
 ## Défauts volontaires
 
-### 1. [Nom du défaut]
-[La règle, la part des lignes touchées, à quoi ça ressemble dans le CSV]
+### 1. Absence du centre de coût
 
-### 2. ...
-### 3. ...
-[Pour le 3 : dis que ce défaut est lié au 2, et pourquoi tu l'as voulu]
+A partir de 7eme mois toutes les champs Centre B disparaissent
 
-## Choix de conception
 
-[Mouvement + Montant au lieu de Débit/Crédit, et pourquoi ;
-dates sans zéro devant ; pas de graine aléatoire]
+### 2. Libellés incohérent
+
+Volontairement remplacer certains libellé par "salaires" qui hors de propors dans mon tableau.
+
+### 3. Années hors exercice
+
+
+remplacer l'année pqr default 2026 par 2024 ou 2025 avec parfois des lien d'erreur avec l'incohérence 2.
+
+
 
 ## Prochaine étape
 
