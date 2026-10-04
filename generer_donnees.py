@@ -14,6 +14,7 @@ with open("ma_compta_sales.csv","w", newline="",encoding="utf-8") as file:
      libel=random.choice(compte_vs_article.get(compte))
      mois=random.randint(1,12)
      centre=random.choice(centrescout)
+     if mois>=7 and centre=="Centre B" : centre= ""
      mouvement=random.choice(deb_cred)
      montant=round(random.uniform(0,1001),2)
      jour=random.randint(1,28)
