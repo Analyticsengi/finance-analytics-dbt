@@ -24,7 +24,7 @@ Volontairement remplacer certains libellé par "salaires" qui hors de propors da
 ### 3. Années hors exercice
 
 
-remplacer l'année pqr default 2026 par 2024 ou 2025 avec parfois des lien d'erreur avec l'incohérence 2.
+remplacer l'année par default 2026 par 2024 ou 2025 avec parfois des lien d'erreur avec l'incohérence 2.
 
 
 
